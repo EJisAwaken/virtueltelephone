@@ -8,15 +8,9 @@ clavierColor.addEventListener("click", ()=>{
     clavier.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`
 })
 
-zero.addEventListener("dblclick", ()=>{
+zero.addEventListener("click", ()=>{
     torche.style.backgroundColor = "yellow";
     lumiere.style.display = "block";
-
-})
-
-zero.addEventListener("click", ()=>{
-    torche.style.backgroundColor = "white";
-    lumiere.style.display = "none";
 
 })
 
