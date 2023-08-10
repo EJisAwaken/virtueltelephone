@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+#torche{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-inline: auto;
+    width: 250px;
+    height: 15px;
+    background-color: white;
+}
+
+#lumiere{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 250px;
+    margin: 50px auto 0 auto;
+    height: 100px;
+    background-color: yellow;
+    display: none;
+
+}
+
+#telephone{
+    border: 5px solid black;
+    width: 500px;
+    height: 915px;
+    border-radius: 65px;
+    margin: 50px auto 0 auto;
+    background: darkslategray;
+}
+
+#clavier{
+
+}
+
+#micro{
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 0 auto;
+    border-radius: 60px;
+    background-color: white;
+
+}
+
+#ecran{
+    border: 2px solid black;
+    width: 300px;
+    height: 235px;
+    margin: 40px auto 0 auto;
+    background-size: cover;
+
+}
+
+#ecrans{
+    background-color: black;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin: -20px 0 0 0;
+}
+
+#marque{
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: 70px;
+    margin: 0 auto 0 auto;
+    padding: 1%;
+    text-align: center;
+    font-size: 40px;
+    font-family: BEYNO, sans-serif;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: black;
+
+
+}
+
+@font-face {
+    font-family: BEYNO ;
+    src: url("BEYNO.ttf");
+}
+
+
+
+#clavier{
+    color: white;
+    background-color: black;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin:-20px 0 0 0 ;
+}
+
+#partieSup1, #partieSup2{
+    display: flex;
+    gap: 15px;
+
+}
+
+#option{
+    border: 2px solid white;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 58px;
+    cursor: pointer;
+}
+
+#contact{
+    border: 2px solid white;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+#eteindre{
+    border: 2px solid white;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 58px;
+    border-top-right-radius: 20px;
+
+
+}
+#appel{
+    border: 2px solid white;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 58px;
+}
+
+#haut{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 10px solid white;
+    width: 100%;
+    height: 75px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+
+}
+
+#bas{
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 10px solid white;
+
+}
+
+.touches{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.touches div{
+    border: 2px solid white;
+    width: 100%;
+    height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ligne{
+    border: 5px solid white;
+    width: 60px;
+    margin: 20px auto;
+}
+
+.imgbtn{
+    width: 60px;
+    margin: 0 40px;
+}
+#silence{
+    width: 30px;
+}
+
+#vibreur{
+    width: 35px;
+}
+
+#torcheI{
+    width: 30px;
+}
+
+#haut img{
+    width: 70px;
+    margin: -15px 40px;
+}
+
+#bas img{
+    width: 70px;
+    margin: -8px 40px;
+}
+
+
+/*debut de la deuxieme partie*/
+
+#entete1{
+    display: flex;
+}
+
+.icone img{
+    width: 40px;
+}
+
+#battery{
+    margin: 0 85px;
+}
+
+#temps{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+#date, #sim1, #sim2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#choix{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    gap: 110px;
+}
+
+#Accueil{
+    background-image: url("images/fond.jpg");
+    background-size: cover;
+    display: none;
+}
+
+#demarrage{
+    color: white;
+    margin: 50px 60px ;
+    animation: op 4s ease;
+    display: none;
+}
+
+@keyframes op {
+    0%{
+       opacity: 0;
+    }
+
+    20%{
+    opacity: 0.4;
+}
+    40%{
+               opacity: 0.6;
+
+    }
+
+    60%{
+              opacity: 1;
+
+    }
+
+    80%{
+
+               opacity: 0.5;
+
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+#demare{
+    font-size: 80px;
+}
+
+span{
+    cursor: pointer;
+}
+
+img{
+    cursor: pointer;
+}
+
+#texte p{
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-size: 5vw;
+    font-family: BEYNO, sans-serif;
+}
